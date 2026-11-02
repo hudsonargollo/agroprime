@@ -658,7 +658,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .hero__crest {
   display: block;
-  width: 132px;
+  width: 264px;
   margin-bottom: 16px;
   filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.45));
 }
@@ -671,14 +671,14 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .hero__title-main {
   display: block;
-  font-size: clamp(7.4rem, 19.08vw, 16.38rem);
+  font-size: clamp(3.7rem, 9.54vw, 8.19rem);
   letter-spacing: 0.002em;
 }
 .hero__title-accent {
   display: block;
   margin-top: 0.04em;
   font-family: var(--font-serif);
-  font-size: clamp(4.15rem, 9.2vw, 8.5rem);
+  font-size: clamp(2.08rem, 4.6vw, 4.25rem);
   font-weight: 300;
   font-style: italic;
   line-height: 1;
@@ -2066,9 +2066,9 @@ body.menu-open .wa-float {
 }
 
 @media (max-width: 480px) {
-  .hero__title-main { font-size: clamp(3.8rem, 19.6vw, 8.3rem); }
-  .hero__title-accent { font-size: clamp(3.8rem, 16.2vw, 8.5rem); }
-  .hero__crest { width: 100px; margin-bottom: 12px; }
+  .hero__title-main { font-size: clamp(1.9rem, 9.8vw, 4.15rem); }
+  .hero__title-accent { font-size: clamp(1.9rem, 8.1vw, 4.25rem); }
+  .hero__crest { width: 200px; margin-bottom: 12px; }
   .hero__inner { padding-bottom: 18px; }
   .hero__content { margin-bottom: 24px; }
   .hero__lead { margin: 18px 0 24px; }
