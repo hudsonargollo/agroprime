@@ -40,7 +40,7 @@ Two earlier generated backgrounds — `feedlot-dusk.jpg` and `nelore-genetics.jp
 | `photos/santa-cruz-herd-v2.jpg` (1100×733) | Generated art direction | Contacto postcard — Santa Cruz flag over the herd at sunset (replaced the 315×200 Facebook crop) |
 | `photos/carneprime-flatlay.jpg` (1024×1024) | Carnes Prime FB | Grupo — real products; the site crops to 4:5 |
 
-The leather crest lives outside this folder, at `../../img/leather-crest.webp` (trimmed from `../../../agroprime-assets/brand/agroprime-leather.webp`). It is used for the hero crest above the location line, the centred Modelo brand-card seal, the footer brand mark and a faint Contacto watermark, all with empty `alt`.
+The leather crest lives outside this folder, at `../../img/leather-crest.webp` (trimmed from `../../../agroprime-assets/brand/agroprime-leather.webp`). It is used for the hero crest above the location line, the centred Modelo brand-card seal, the crest above the footer wordmark and a faint Contacto watermark, all with empty `alt`.
 
 ## Governance
 

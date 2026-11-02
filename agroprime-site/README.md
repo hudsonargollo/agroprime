@@ -48,7 +48,7 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 - `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square; the Grupo figure crops to 4:5).
 - `backgrounds/meat-premium.jpg` — Carnes Prime section background (generated art direction).
 - `textures/dark-hide.jpg`, `gold-foil.jpg`, `cream-linen.jpg` — section surfaces.
-- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the hero crest above the location line, the centred Modelo brand-card seal, the footer brand mark and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
+- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the hero crest above the location line, the centred Modelo brand-card seal, the crest above the footer wordmark and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
 - `img/csr-calf.jpg` — crop of the 2026-10-06 Hospital de Amor post, removing the caption and logo.
 - `img/cowgirl-portrait.jpg` — crop of the 2026-10-11 Día de la Mujer Boliviana post, removing caption/logo; client-generated content, not documentary.
 - `img/crest.png` — original gold crest, shown on a white plaque in the Nosotros tile (crop of the supplied JPEG, not a redrawn logo).
