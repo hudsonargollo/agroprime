@@ -664,7 +664,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .hero__crest {
   display: block;
-  width: 88px;
+  width: 132px;
   margin-bottom: 16px;
   filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.45));
 }
@@ -788,13 +788,13 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   color: rgba(245, 239, 224, 0.5);
 }
 @media (min-width: 721px) {
-  .hero__inner { padding-top: 100px; padding-bottom: 20px; }
-  .hero__content { margin-bottom: 24px; }
-  .hero .eyebrow { margin-bottom: 18px; }
-  .hero__slogan { margin-top: 20px; }
-  .hero__lead { margin: 18px 0 24px; }
-  .hero__title { line-height: 0.79; }
-  .hero__bottom { padding-top: 16px; }
+  .hero__inner { padding-top: 100px; padding-bottom: 16px; }
+  .hero__content { margin-bottom: 12px; }
+  .hero .eyebrow { margin-bottom: 14px; }
+  .hero__slogan { margin-top: 16px; }
+  .hero__lead { margin: 12px 0 14px; }
+  .hero__title { line-height: 0.78; }
+  .hero__bottom { padding-top: 12px; }
 }
 
 /* Marquee */
@@ -2074,8 +2074,11 @@ body.menu-open .wa-float {
 @media (max-width: 480px) {
   .hero__title-main { font-size: clamp(3.8rem, 19.6vw, 8.3rem); }
   .hero__title-accent { font-size: clamp(3.8rem, 16.2vw, 8.5rem); }
-  .hero__crest { width: 76px; margin-bottom: 14px; }
-  .hero__slogan { font-size: 9px; letter-spacing: 0.18em; }
+  .hero__crest { width: 100px; margin-bottom: 12px; }
+  .hero__inner { padding-bottom: 18px; }
+  .hero__content { margin-bottom: 24px; }
+  .hero__lead { margin: 18px 0 24px; }
+  .hero__slogan { margin-top: 18px; font-size: 9px; letter-spacing: 0.18em; }
   .hero__slogan::before { width: 20px; }
   .hero__actions .btn { width: 100%; }
   .hero__actions .media-toggle { width: 46px; flex: none; }
