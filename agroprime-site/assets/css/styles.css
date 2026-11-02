@@ -420,19 +420,6 @@ section[id],
   margin-right: auto;
   text-decoration: none;
 }
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: var(--cream);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
-  overflow: hidden;
-  flex: none;
-  transition: width 0.4s var(--ease), height 0.4s var(--ease);
-}
-.brand__mark img { width: 100%; height: 100%; object-fit: contain; padding: 2px; }
 .brand__name {
   display: block;
   font-family: var(--font-display);
@@ -675,6 +662,13 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   margin-bottom: clamp(36px, 7vh, 76px);
   max-width: 880px;
 }
+.hero__crest {
+  display: block;
+  width: 88px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.45));
+}
+.hero__crest img { display: block; width: 100%; height: auto; }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 600;
@@ -683,14 +677,14 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .hero__title-main {
   display: block;
-  font-size: clamp(4.1rem, 10.6vw, 9.1rem);
+  font-size: clamp(7.4rem, 19.08vw, 16.38rem);
   letter-spacing: 0.002em;
 }
 .hero__title-accent {
   display: block;
   margin-top: 0.04em;
   font-family: var(--font-serif);
-  font-size: clamp(2.3rem, 5.1vw, 4.7rem);
+  font-size: clamp(4.15rem, 9.2vw, 8.5rem);
   font-weight: 300;
   font-style: italic;
   line-height: 1;
@@ -792,6 +786,15 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   line-height: 1.7;
   text-transform: uppercase;
   color: rgba(245, 239, 224, 0.5);
+}
+@media (min-width: 721px) {
+  .hero__inner { padding-top: 100px; padding-bottom: 20px; }
+  .hero__content { margin-bottom: 24px; }
+  .hero .eyebrow { margin-bottom: 18px; }
+  .hero__slogan { margin-top: 20px; }
+  .hero__lead { margin: 18px 0 24px; }
+  .hero__title { line-height: 0.79; }
+  .hero__bottom { padding-top: 16px; }
 }
 
 /* Marquee */
@@ -2014,8 +2017,6 @@ body.menu-open .wa-float {
 }
 
 @media (max-width: 720px) {
-  .brand__mark { width: 40px; height: 40px; }
-  .brand__mark img { width: 100%; }
   .brand__name { font-size: 20px; letter-spacing: 0.12em; }
   .brand__sub { display: none; }
   .site-header { padding: 12px 0; }
@@ -2071,8 +2072,9 @@ body.menu-open .wa-float {
 }
 
 @media (max-width: 480px) {
-  .hero__title-main { font-size: clamp(3.7rem, 17vw, 4.6rem); }
-  .hero__title-accent { font-size: clamp(2.1rem, 9vw, 2.7rem); }
+  .hero__title-main { font-size: clamp(3.8rem, 19.6vw, 8.3rem); }
+  .hero__title-accent { font-size: clamp(3.8rem, 16.2vw, 8.5rem); }
+  .hero__crest { width: 76px; margin-bottom: 14px; }
   .hero__slogan { font-size: 9px; letter-spacing: 0.18em; }
   .hero__slogan::before { width: 20px; }
   .hero__actions .btn { width: 100%; }

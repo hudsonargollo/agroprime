@@ -47,7 +47,7 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 - `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square; the Grupo figure crops to 4:5).
 - `backgrounds/meat-premium.jpg` — Carnes Prime section background (generated art direction).
 - `textures/dark-hide.jpg`, `gold-foil.jpg`, `cream-linen.jpg` — section surfaces.
-- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the header mark, the centred Modelo brand-card seal and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
+- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the hero crest above the location line, the centred Modelo brand-card seal and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
 - `img/csr-calf.jpg` — crop of the 2026-10-06 Hospital de Amor post, removing the caption and logo.
 - `img/cowgirl-portrait.jpg` — crop of the 2026-10-11 Día de la Mujer Boliviana post, removing caption/logo; client-generated content, not documentary.
 - `img/crest.png` — original gold crest, shown on a white plaque in the Nosotros tile (crop of the supplied JPEG, not a redrawn logo).
@@ -61,7 +61,7 @@ Generated imagery is disclosed in the footer and beside the pillars: “Algunas 
 1. **TikTok** — the brief lists TikTok but no handle was verifiable. No TikTok link is published; add it only when the client supplies the exact profile.
 2. **Instagram** — the brief lists Facebook + TikTok, but `@agroprime_bolivia` exists and is linked. Confirm whether IG should stay in the footer.
 3. **Surname spelling** — brief uses **Añez Hurtado**; the published logo uses **Anez Hurtado**. The footer currently follows the brief.
-4. **Logo** — the header mark and seals are crops of a JPEG. Request the official SVG/PNG with transparency before launch.
+4. **Logo** — the hero crest and seals are crops of a JPEG. Request the official SVG/PNG with transparency before launch.
 5. **Domain** — canonical URLs and JSON-LD use `https://agroprime.com.bo/`, based on the recruitment email in use. Confirm the production host.
 6. **Carnes Prime benefit** — “10% para socios” comes from archived store content; the site adds “sujeto a condiciones vigentes en tienda.” Confirm terms.
 7. **Rights / approvals** — publish only after Agro-Prime approves use of their photos/reels and the generated art direction.
