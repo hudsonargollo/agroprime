@@ -902,6 +902,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .model__img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 58% 50%;
@@ -1405,6 +1406,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 .group__img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 50% 55%;
@@ -1472,6 +1474,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 .about__fig--tall { grid-row: span 2; }
 .about__fig img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   border: 1px solid rgba(11, 11, 11, 0.1);
 }
@@ -1788,6 +1791,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 .contact-card__place img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 315 / 200;
   object-fit: cover;
   opacity: 0.92;
