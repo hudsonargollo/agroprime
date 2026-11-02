@@ -316,31 +316,6 @@ section[id],
   color: var(--ink);
 }
 
-.media-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  height: 46px;
-  padding: 0 16px;
-  border: 1px solid rgba(245, 239, 224, 0.3);
-  border-radius: 999px;
-  background: rgba(8, 9, 5, 0.24);
-  backdrop-filter: blur(8px);
-  color: var(--cream);
-  font-size: 9.5px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: border-color 0.3s var(--ease), color 0.3s var(--ease), background-color 0.3s var(--ease);
-}
-.media-toggle:hover { border-color: var(--gold); color: var(--gold); }
-.media-toggle .icon { width: 14px; height: 14px; }
-.media-toggle .icon--play { display: none; }
-.media-toggle.is-paused .icon--pause { display: none; }
-.media-toggle.is-paused .icon--play { display: block; }
-
 .socials { display: flex; gap: 8px; }
 .socials a {
   display: grid;
@@ -2022,8 +1997,6 @@ body.menu-open .wa-float {
   .hero__lead { font-size: 14.5px; }
   .hero__actions { gap: 10px; }
   .hero__actions .btn { flex: 1 1 auto; }
-  .media-toggle__label { display: none; }
-  .media-toggle--hero { width: 46px; padding: 0; justify-content: center; }
   .hero__bottom { padding-top: 16px; }
   .hero__place { font-size: 8.5px; }
 
@@ -2051,7 +2024,6 @@ body.menu-open .wa-float {
 
   .feature__media { aspect-ratio: 4 / 3; }
   .feature__tag { top: 16px; left: 16px; }
-  .feature__media .media-toggle { top: 14px; right: 14px; }
   .feature__caption { left: 16px; right: 16px; bottom: 16px; }
 
   .group__badge { width: 96px; height: 96px; }
@@ -2075,7 +2047,6 @@ body.menu-open .wa-float {
   .hero__slogan { margin-top: 18px; font-size: 9px; letter-spacing: 0.18em; }
   .hero__slogan::before { width: 20px; }
   .hero__actions .btn { width: 100%; }
-  .hero__actions .media-toggle { width: 46px; flex: none; }
   .hero__bottom { grid-template-columns: 1fr; }
   .hero__place { display: none; }
 
@@ -2110,8 +2081,7 @@ body.menu-open .wa-float {
   .mobile-menu,
   .wa-float,
   .marquee,
-  .hero__video,
-  .media-toggle { display: none !important; }
+  .hero__video { display: none !important; }
   body { background: #fff; color: #000; }
   .hero { min-height: 0; color: #000; background: #fff; }
   .hero__scrim { display: none; }

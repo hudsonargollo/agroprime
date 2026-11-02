@@ -134,43 +134,6 @@
   /* Videos ----------------------------------------------------------------- */
   const videos = [...document.querySelectorAll('video')];
 
-  const syncToggle = (video) => {
-    const btn = document.querySelector(`[data-media-toggle="${video.id}"]`);
-    if (!btn) return;
-    const paused = video.paused;
-    const isHero = video.id === 'heroVideo';
-    btn.classList.toggle('is-paused', paused);
-    btn.setAttribute('aria-pressed', String(paused));
-    btn.setAttribute('aria-label', paused
-      ? (isHero ? 'Reproducir video de fondo' : 'Reproducir video de genética')
-      : (isHero ? 'Pausar video de fondo' : 'Pausar video de genética'));
-    const label = btn.querySelector('.media-toggle__label');
-    if (label) label.textContent = paused ? 'Reproducir video' : 'Pausar video';
-  };
-
-  videos.forEach((video) => {
-    video.addEventListener('play', () => syncToggle(video));
-    video.addEventListener('pause', () => syncToggle(video));
-  });
-
-  let heroUserPaused = false;
-
-  document.querySelectorAll('[data-media-toggle]').forEach((btn) => {
-    const video = document.getElementById(btn.dataset.mediaToggle);
-    if (!video) return;
-    syncToggle(video);
-    btn.addEventListener('click', () => {
-      if (video.paused) {
-        if (video.id === 'heroVideo') heroUserPaused = false;
-        video.play().catch(() => {});
-      } else {
-        if (video.id === 'heroVideo') heroUserPaused = true;
-        video.pause();
-      }
-      syncToggle(video);
-    });
-  });
-
   if (prefersReduced()) {
     const hero = document.getElementById('heroVideo');
     if (hero) hero.pause();
@@ -275,7 +238,7 @@
       return;
     }
     const hero = document.getElementById('heroVideo');
-    if (hero && !heroUserPaused && !prefersReduced()) hero.play().catch(() => {});
+    if (hero && !prefersReduced()) hero.play().catch(() => {});
     const activePillar = panels.find((p) => p.classList.contains('is-active'))?.querySelector('video');
     if (activePillar && stageInView && !prefersReduced()) activePillar.play().catch(() => {});
   });
