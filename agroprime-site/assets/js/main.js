@@ -176,25 +176,6 @@
     if (hero) hero.pause();
   }
 
-  const featureVideo = document.querySelector('[data-inview-video]');
-  const featureSection = document.getElementById('genetica');
-  let featureInView = false;
-
-  if (featureVideo && featureSection && 'IntersectionObserver' in window) {
-    const featureObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        featureInView = entry.isIntersecting;
-        if (entry.isIntersecting && !prefersReduced()) {
-          featureVideo.play().catch(() => {});
-        } else {
-          featureVideo.pause();
-        }
-      });
-    }, { threshold: 0.3 });
-    featureObserver.observe(featureSection);
-  }
-
-
   /* Pillars tabs ----------------------------------------------------------- */
   const tabs = [...document.querySelectorAll('[role="tab"][data-pillar]')];
   const panels = [...document.querySelectorAll('.pillar-panel')];
@@ -295,7 +276,6 @@
     }
     const hero = document.getElementById('heroVideo');
     if (hero && !heroUserPaused && !prefersReduced()) hero.play().catch(() => {});
-    if (featureVideo && featureInView && !prefersReduced()) featureVideo.play().catch(() => {});
     const activePillar = panels.find((p) => p.classList.contains('is-active'))?.querySelector('video');
     if (activePillar && stageInView && !prefersReduced()) activePillar.play().catch(() => {});
   });

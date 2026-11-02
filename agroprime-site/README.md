@@ -29,7 +29,7 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 1. Hero — silent looping reel, brand promise, primary WhatsApp CTA
 2. Modelo — investment thesis, three principles, brand card, value proposition pull-quote
 3. Pilares — interactive four-pillar tabs with a sticky media stage
-4. Genética — split video feature and service proof points
+4. Genética — split feature with generated art-direction still and service proof points
 5. Cómo trabajamos — four-step process and first-conversation CTA
 6. Grupo — Carnes Prime Market, 10% partner benefit, store details
 7. Nosotros — community/CSR, values, recruitment band (`rrhh@agroprime.com.bo`)
@@ -39,7 +39,8 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 ## Media mapping
 
 - `video/hero-nelore-pond.mp4` — hero background. Recut from IG reel 2026-10-07, **t 32.2–42.0 s** (frontal angles only; the earlier t 22–40 cut included a rear angle). 1120×630, 9.8 s, silent, H.264 ~1.5 Mbps, 1.9 MB. Poster is a frontal frame at 3.3 s.
-- `video/genetics-closeup.mp4` — Genética split feature. Same reel, t 34–44, 880×495, 10 s, silent.
+- `video/genetics-closeup.mp4` — Pilares › Genética tab. Same reel, t 34–44, 880×495, 10 s, silent.
+- `backgrounds/genetica-nelore.jpg` — Genética split feature (generated art direction, 1536×1024).
 - `photos/nelore-pond.jpg` (576×720) — Modelo figure. Crop of the same 2026-10-07 reel at t 20 s; clean frame, no captions or logo.
 - `photos/feedlot-cattle.jpg` (700×875) — Pilares › Nutrición. Crop of the 2026-10-20 feedlot reel at t 20 s, framed to exclude the burned-in copy and crest watermark.
 - `photos/corral-cattle.jpg` (700×875) — Pilares › Sanidad. Crop of the 2026-10-29 “Bañito de élite” reel at t 4 s, cut above the overlaid caption and banner.
@@ -47,7 +48,7 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 - `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square; the Grupo figure crops to 4:5).
 - `backgrounds/meat-premium.jpg` — Carnes Prime section background (generated art direction).
 - `textures/dark-hide.jpg`, `gold-foil.jpg`, `cream-linen.jpg` — section surfaces.
-- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the hero crest above the location line, the centred Modelo brand-card seal and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
+- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. Used as the hero crest above the location line, the centred Modelo brand-card seal, the footer brand mark and a faint watermark in Contacto. Empty `alt`, `aria-hidden`.
 - `img/csr-calf.jpg` — crop of the 2026-10-06 Hospital de Amor post, removing the caption and logo.
 - `img/cowgirl-portrait.jpg` — crop of the 2026-10-11 Día de la Mujer Boliviana post, removing caption/logo; client-generated content, not documentary.
 - `img/crest.png` — original gold crest, shown on a white plaque in the Nosotros tile (crop of the supplied JPEG, not a redrawn logo).
