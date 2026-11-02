@@ -44,7 +44,7 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 - `photos/nelore-pond.jpg` (576×720) — Modelo figure. Crop of the same 2026-10-07 reel at t 20 s; clean frame, no captions or logo.
 - `photos/feedlot-cattle.jpg` (700×875) — Pilares › Nutrición. Crop of the 2026-10-20 feedlot reel at t 20 s, framed to exclude the burned-in copy and crest watermark.
 - `photos/corral-cattle.jpg` (700×875) — Pilares › Sanidad. Crop of the 2026-10-29 “Bañito de élite” reel at t 4 s, cut above the overlaid caption and banner.
-- `photos/santa-cruz-herd.jpg` (315×200) — contact-card postcard. Crop of the Facebook Santa Cruz flag photo.
+- `photos/santa-cruz-herd-v2.jpg` (1100×733) — contact-card postcard (generated art direction). Santa Cruz green-white-green flag over the herd at sunset, replacing the low-res Facebook crop.
 - `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square; the Grupo figure crops to 4:5).
 - `backgrounds/meat-premium.jpg` — Carnes Prime section background (generated art direction).
 - `textures/dark-hide.jpg`, `gold-foil.jpg`, `cream-linen.jpg` — section surfaces.

@@ -37,7 +37,7 @@ Two earlier generated backgrounds — `feedlot-dusk.jpg` and `nelore-genetics.jp
 | `photos/nelore-pond.jpg` (576×720) | IG 2026-10-07, t 20 s | Modelo figure — Nelore by the water, no captions |
 | `photos/feedlot-cattle.jpg` (700×875) | IG 2026-10-20, t 20 s | Pilares › Nutrición — feedlot pens, cropped away from the on-screen copy and crest |
 | `photos/corral-cattle.jpg` (700×875) | IG 2026-10-29 “Bañito de élite”, t 4 s | Pilares › Sanidad — Nelore at the chute, cropped above the banner |
-| `photos/santa-cruz-herd.jpg` (315×200) | Facebook flag post | Contacto postcard — Santa Cruz flag over the herd |
+| `photos/santa-cruz-herd-v2.jpg` (1100×733) | Generated art direction | Contacto postcard — Santa Cruz flag over the herd at sunset (replaced the 315×200 Facebook crop) |
 | `photos/carneprime-flatlay.jpg` (1024×1024) | Carnes Prime FB | Grupo — real products; the site crops to 4:5 |
 
 The leather crest lives outside this folder, at `../../img/leather-crest.webp` (trimmed from `../../../agroprime-assets/brand/agroprime-leather.webp`). It is used for the hero crest above the location line, the centred Modelo brand-card seal, the footer brand mark and a faint Contacto watermark, all with empty `alt`.
