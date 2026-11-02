@@ -20,11 +20,13 @@ A server is required: browsers block the MP4s and fonts when `index.html` is ope
 | --- | --- |
 | `agroprime-site/` | The complete site — this is what gets deployed |
 | `agroprime-site/README.md` | Media mapping, section order, open client decisions, QA notes |
-| `agroprime-assets/` | **Not in git.** Raw Instagram/Facebook archive + client brief, kept locally until image rights are cleared |
+| `agroprime-assets/` | Client brief, raw Instagram/Facebook archive (posts, reels, profile media) and brand sources |
 
 ## Status
 
 Built and QA'd locally at 1440 px and 390 px. **Not deployed.** Before launch, resolve the open decisions listed in [`agroprime-site/README.md`](agroprime-site/README.md): TikTok handle, official logo, surname spelling, production domain, Carnes Prime benefit terms, and approval for the client photos and AI art direction.
+
+`agroprime-assets/` holds the company's own published media, included here as a working archive. It is reference material, not a license — clear image/reel rights with Agro-Prime before the site goes live.
 
 ## Deploy
 

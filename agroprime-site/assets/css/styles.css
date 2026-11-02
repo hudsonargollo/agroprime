@@ -1326,7 +1326,7 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 .group {
   position: relative;
   padding: var(--section-pad) 0;
-  background: #080905 url('../media/backgrounds/meat-premium.jpg') center / cover no-repeat;
+  background: #080905 url('../media/textures/dark-hide.jpg') center / cover no-repeat;
   color: var(--cream);
 }
 .group::before {
@@ -1402,7 +1402,8 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   position: relative;
   margin: 0;
 }
-.group__figure img {
+.group__img {
+  display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -1487,24 +1488,31 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 }
 .about__tile {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 18px;
-  min-height: 156px;
-  padding: 20px;
-  background-color: var(--ink);
+  align-items: center;
+  gap: 12px;
+  min-height: 170px;
+  padding: 16px;
+  overflow: hidden;
+  background-color: var(--cream);
   background-image:
-    linear-gradient(rgba(11, 11, 11, 0.9), rgba(11, 11, 11, 0.94)),
-    url('../media/textures/dark-hide.jpg');
+    linear-gradient(rgba(245, 239, 224, 0.55), rgba(245, 239, 224, 0.82)),
+    url('../media/textures/cream-linen.jpg');
   background-size: cover;
-  color: var(--cream);
+  border: 1px solid rgba(138, 90, 30, 0.24);
+  color: var(--ink);
 }
-.about__tile img { width: 52px; height: auto; }
+.about__tile-crest {
+  flex: none;
+  width: 46%;
+  height: auto;
+  filter: drop-shadow(0 8px 14px rgba(90, 45, 10, 0.22));
+}
 .about__tile p {
+  flex: 1;
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 15px;
   font-style: italic;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 .about__lead {
   margin: 26px 0 18px;
@@ -1600,6 +1608,31 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
 /* --------------------------------------------------------------------------
    Contact
    -------------------------------------------------------------------------- */
+
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+.contact__seal {
+  position: absolute;
+  top: 12px;
+  right: -96px;
+  z-index: 0;
+  width: min(370px, 30vw);
+  opacity: 0.13;
+  transform: rotate(-7deg);
+  pointer-events: none;
+  filter: saturate(0.7) brightness(1.3);
+}
+.contact__seal img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.contact .container {
+  position: relative;
+  z-index: 1;
+}
 
 .contact__grid {
   display: grid;
@@ -1747,6 +1780,27 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   color: var(--gold);
 }
 .contact-card__social { padding-top: 20px; }
+.contact-card__place {
+  margin: 24px 0 0;
+  border: 1px solid rgba(232, 176, 80, 0.24);
+  background: #0b0c06;
+}
+.contact-card__place img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 315 / 200;
+  object-fit: cover;
+  opacity: 0.92;
+}
+.contact-card__place figcaption {
+  padding: 9px 12px;
+  border-top: 1px solid rgba(232, 176, 80, 0.18);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 239, 224, 0.5);
+}
 
 /* --------------------------------------------------------------------------
    Footer
@@ -1975,7 +2029,11 @@ body.menu-open .wa-float {
 
   .about__collage { grid-template-columns: 1fr 1fr; }
   .about__fig--tall img { aspect-ratio: 1 / 1.9; }
-  .about__tile { min-height: 140px; }
+  .about__tile { justify-content: center; min-height: 150px; padding: 10px; }
+  .about__tile-crest { width: 74%; }
+  .about__tile p { display: none; }
+
+  .contact__seal { right: -60px; width: 230px; opacity: 0.1; }
 
   .contact-card__pair { grid-template-columns: 1fr; gap: 16px; }
   .contact-card__phone { font-size: 38px; }
@@ -2017,8 +2075,8 @@ body.menu-open .wa-float {
 
   .pullquote p { font-size: 25px; }
   .model__card { padding: 18px 20px; }
-  .about__tile { min-height: 120px; }
-  .about__tile p { font-size: 17px; }
+  .about__tile { min-height: 130px; }
+  .about__tile-crest { width: 80%; }
 }
 
 /* --------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 # Agro-Prime — landing page
 
-Static one-page site built from the client's Spanish executive summary and the archived Facebook/Instagram content. Spanish (Bolivia), single page, no build step, no tracking. The raw social archive stays local and is not part of this repository.
+Static one-page site built from the client's Spanish executive summary and the archived Facebook/Instagram content. Spanish (Bolivia), single page, no build step, no tracking. The raw social archive lives in [`../agroprime-assets/`](../agroprime-assets/).
 
 ## Run locally
 
@@ -20,8 +20,8 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 | `assets/css/styles.css` | Design system, layout, responsive rules, reduced-motion/print styles |
 | `assets/js/main.js` | Header state, mobile menu, tabs, in-view video, WhatsApp form |
 | `assets/fonts/` | Barlow Condensed (500/600/700), Cormorant Garamond italic (variable), Inter (variable) — self-hosted |
-| `assets/media/` | Web-encoded media served by the site: hero/feature clips, posters, generated backgrounds, textures, archived photos |
-| `assets/img/` | Cropped/derived assets: transparent bull mark, transparent crest, CSR and cowgirl crops, OG image, icons |
+| `assets/media/` | Web-encoded media served by the site: hero/feature clips, posters, backgrounds, textures, archived photos |
+| `assets/img/` | Cropped/derived assets: transparent bull mark, transparent crest, leather crest, CSR and cowgirl crops, OG image, icons |
 | `site.webmanifest`, `robots.txt`, `sitemap.xml` | PWA icon metadata and crawl files |
 
 ## Section order
@@ -40,15 +40,21 @@ A local server is needed for the MP4s and self-hosted fonts (opening `index.html
 
 - `video/hero-nelore-pond.mp4` — hero background. Recut from IG reel 2026-10-07, **t 32.2–42.0 s** (frontal angles only; the earlier t 22–40 cut included a rear angle). 1120×630, 9.8 s, silent, H.264 ~1.5 Mbps, 1.9 MB. Poster is a frontal frame at 3.3 s.
 - `video/genetics-closeup.mp4` — Genética split feature. Same reel, t 34–44, 880×495, 10 s, silent.
-- `backgrounds/feedlot-dusk.jpg`, `nelore-genetics.jpg`, `meat-premium.jpg` — generated art direction (feedlot/nutrition, Nelore, meat); not documentary evidence.
-- `backgrounds/meat-premium.jpg` — Carnes Prime section background.
+- `photos/nelore-pond.jpg` (576×720) — Modelo figure. Crop of the same 2026-10-07 reel at t 20 s; clean frame, no captions or logo.
+- `photos/feedlot-cattle.jpg` (700×875) — Pilares › Nutrición. Crop of the 2026-10-20 feedlot reel at t 20 s, framed to exclude the burned-in copy and crest watermark.
+- `photos/corral-cattle.jpg` (700×875) — Pilares › Sanidad. Crop of the 2026-10-29 “Bañito de élite” reel at t 4 s, cut above the overlaid caption and banner.
+- `photos/santa-cruz-herd.jpg` (315×200) — contact-card postcard. Crop of the Facebook Santa Cruz flag photo.
+- `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square; the Grupo figure crops to 4:5).
+- `backgrounds/meat-premium.jpg` — Carnes Prime section background (generated art direction).
 - `textures/dark-hide.jpg`, `gold-foil.jpg`, `cream-linen.jpg` — section surfaces.
-- `photos/carneprime-flatlay.jpg` — real Carnes Prime product image (kept square source; site crops to 4:5).
+- `img/leather-crest.webp` (778×860) — tooled-leather crest derived from `../agroprime-assets/brand/agroprime-leather.webp`, trimmed to its alpha bounding box. **Decorative only**: the Nosotros tile and a faint watermark in Contacto. Empty `alt`, `aria-hidden`; never used as the header logo.
 - `img/csr-calf.jpg` — crop of the 2026-10-06 Hospital de Amor post, removing the caption and logo.
 - `img/cowgirl-portrait.jpg` — crop of the 2026-10-11 Día de la Mujer Boliviana post, removing caption/logo; client-generated content, not documentary.
-- `photos/brand-cover.jpg`, `logo-badge.jpg` — archived brand material; logo mark in the header is a crop of the supplied JPEG crest, not a redrawn logo.
+- `img/crest.png`, `img/bull-mark.png` — header mark and seals, derived from the supplied JPEG crest (crop, not a redrawn logo).
 
-Generated imagery is disclosed in the footer: “Algunas imágenes son dirección de arte generada…”. Keep that line until the client approves the art direction.
+Two earlier generated backgrounds (`feedlot-dusk.jpg`, `nelore-genetics.jpg`) were removed once real reel stills replaced them; the originals remain in the archive.
+
+Generated imagery is disclosed in the footer and beside the pillars: “Algunas imágenes son dirección de arte generada…”. Keep that line until the client approves the art direction.
 
 ## Before launch — open client decisions
 

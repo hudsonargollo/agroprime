@@ -1,0 +1,84 @@
+{
+  "captured_at": "2026-11-01",
+  "source": "https://www.facebook.com/AgroPrimeBolivia/",
+  "page": {
+    "name": "Agro-Prime Bolivia",
+    "location_label": "Santa Cruz de la Sierra",
+    "category": "Investment Management Company",
+    "followers": 166,
+    "following": 16,
+    "talking_about": 50,
+    "bio": "AGRO-PRIME 🇧🇴\nProducción pecuaria de alto rendimiento y genética de élite.\nInvertimos en calidad para generar resultados.\nTu inversión, respaldada por experiencia, tecnología y excelencia pecuaria.",
+    "address": "Calle Aruma 290, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 69535546",
+    "linked_pages": ["Carnes Prime Market"],
+    "files": {
+      "profile": "profile/AgroPrime-profile.jpg",
+      "cover": "profile/AgroPrime-cover.jpg"
+    },
+    "cover_photo_content": {
+      "headline": "AGRO-PRIME — EXCELENCIA EN GANADERÍA",
+      "pillars": ["Genética de élite", "Nutrición de calidad", "Sanidad y bioseguridad", "Rentabilidad sostenible"],
+      "values_line": "PRODUCTIVIDAD • INNOVACIÓN • CONFIANZA",
+      "footer": "Santa Cruz - Bolivia | facebook.com/Agro Prime | +591 69535546 | TRABAJAMOS HOY, PRODUCIMOS EL FUTURO."
+    },
+    "note": "Facebook gates post captions, albums and videos behind login. Only the cover, profile image and the 9 feed thumbnails rendered on the public page were retrievable."
+  },
+  "photos": [
+    {
+      "file": "posts/2026-10-30_867787237.jpg",
+      "caption": "Recruitment: Asistente de Marketing (same creative as Instagram, 2026-10-30)."
+    },
+    {
+      "file": "posts/2026-10-28_868138104.jpg",
+      "caption": "Grupo Agro-Prime benefit: 10% discount at Carnes Prime Market for investor partners (2026-10-28)."
+    },
+    {
+      "file": "posts/2026-10-23_858569585.jpg",
+      "caption": "Official contact channels announcement (2026-10-23)."
+    },
+    {
+      "file": "posts/2026-10-11_843495058.jpg",
+      "caption": "Día de la Mujer Boliviana (2026-10-11)."
+    },
+    {
+      "file": "posts/fb-835306060.jpg",
+      "caption": "Charity: 1er Remate Derecho de Vivir for Hospital de Amor (Barretos)."
+    },
+    {
+      "file": "posts/fb-841013745.jpg",
+      "caption": "Recruitment: production & bagging manager, feed mill for feedlot (confinamiento)."
+    },
+    {
+      "file": "posts/fb-835511445.jpg",
+      "caption": "Recruitment: 3 butchers for Carnes Prime."
+    },
+    {
+      "file": "posts/fb-832661258.jpg",
+      "caption": "Teaser: 'ALGO GRANDE ESTÁ POR LLEGAR' — Carnes Prime launch under velvet cloth with gold crest."
+    },
+    {
+      "file": "posts/fb-819436508.jpg",
+      "caption": "Santa Cruz 216th anniversary greeting: green-white-green flag over Nelore herd."
+    },
+    {
+      "file": "posts/carnesprime-876793626.jpg",
+      "caption": "Carnes Prime Market giveaway (Halloween): customer with cap, meat pack, beer box, Coca-Cola."
+    },
+    {
+      "file": "posts/carnesprime-878294589.jpg",
+      "caption": "Carnes Prime Market giveaway flat-lay: AGRO-PRIME and CARNES PRIME caps, rib finger meat, chorizo, bread, Coca-Cola, Corona."
+    }
+  ],
+  "brand_notes": {
+    "logo": "Circular gold badge: charging bull in a laurel wreath, farmhouse + rising sun, ribbon reading 'Negociaciones y Servicios Ganaderos — Anez Hurtado'. Colors: metallic gold on black/very dark green.",
+    "sister_brand": {
+      "name": "Carnes Prime Market",
+      "tagline": "Cortes Premium — Calidad desde el origen",
+      "address": "Calle Libertad, Edificio Punta del Este, local 2, casi Segundo Anillo, Santa Cruz",
+      "whatsapp": "+591 57389430",
+      "link": "https://bit.ly/4BaMCij",
+      "benefit": "10% discount on meats and chorizos for Grupo Agro-Prime investor partners"
+    }
+  }
+}
