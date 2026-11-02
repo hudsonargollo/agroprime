@@ -432,7 +432,7 @@ section[id],
   flex: none;
   transition: width 0.4s var(--ease), height 0.4s var(--ease);
 }
-.brand__mark img { width: 34px; height: auto; }
+.brand__mark img { width: 100%; height: 100%; object-fit: contain; padding: 2px; }
 .brand__name {
   display: block;
   font-family: var(--font-display);
@@ -928,8 +928,8 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   border: 1px solid rgba(138, 90, 30, 0.22);
   box-shadow: 0 24px 60px rgba(11, 11, 11, 0.22);
 }
-.model__card-mark { display: block; margin-bottom: 14px; }
-.model__card-mark img { width: 62px; height: auto; }
+.model__card-mark { display: flex; justify-content: center; margin-bottom: 14px; }
+.model__card-mark img { width: 108px; height: auto; }
 .model__card-values {
   display: block;
   font-family: var(--font-display);
@@ -1508,7 +1508,10 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   flex: none;
   width: 46%;
   height: auto;
-  filter: drop-shadow(0 8px 14px rgba(90, 45, 10, 0.22));
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(138, 90, 30, 0.16);
+  box-shadow: 0 8px 18px rgba(90, 45, 10, 0.12);
 }
 .about__tile p {
   flex: 1;
@@ -2012,7 +2015,7 @@ body.menu-open .wa-float {
 
 @media (max-width: 720px) {
   .brand__mark { width: 40px; height: 40px; }
-  .brand__mark img { width: 30px; }
+  .brand__mark img { width: 100%; }
   .brand__name { font-size: 20px; letter-spacing: 0.12em; }
   .brand__sub { display: none; }
   .site-header { padding: 12px 0; }
@@ -2079,8 +2082,9 @@ body.menu-open .wa-float {
 
   .pullquote p { font-size: 25px; }
   .model__card { padding: 18px 20px; }
+  .model__card-mark img { width: 92px; }
   .about__tile { min-height: 130px; }
-  .about__tile-crest { width: 80%; }
+  .about__tile-crest { width: 80%; padding: 8px; }
 }
 
 /* --------------------------------------------------------------------------
