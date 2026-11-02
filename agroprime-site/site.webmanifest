@@ -1,0 +1,14 @@
+{
+  "name": "Agro-Prime — Excelencia en ganadería",
+  "short_name": "Agro-Prime",
+  "description": "Gestión de inversiones ganaderas y producción pecuaria de alto rendimiento en Santa Cruz de la Sierra, Bolivia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0B",
+  "theme_color": "#0B0B0B",
+  "icons": [
+    { "src": "assets/img/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
