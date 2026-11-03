@@ -1,0 +1,20 @@
+{
+  "schema": "agroprime.social/1.0",
+  "id": "social-2026-11-15-banito-elite-reel",
+  "plataforma": "instagram",
+  "plataformas_extra": ["facebook"],
+  "fecha_publicacion": "2026-11-15T08:00:00-04:00",
+  "formato": "reel",
+  "titulo": "Bañito de élite a las niñas de la casa",
+  "caption": "Sanidad no es gasto: es protección del valor del rodeo.\n\nHoy tocó baño antiparasitario para las terneras. Un plan sanitario al día es lo que sostiene la ganancia de peso del año.\n\n¿Querés armar el plan para tu predio? Escribinos 📲 +591 69535546",
+  "primer_comentario": "#agroprime #sanidadbovina #ganaderia #santacruz #bolivia #cuidadodelrodeo #ganaderaboliviana",
+  "hashtags": ["#agroprime", "#sanidadbovina", "#ganaderaboliviana", "#santacruz", "#bolivia"],
+  "media": [
+    { "tipo": "video", "brief": "Reutilizar reel real 2026-10-29 (baño de terneras), tomas frontales sin caption quemado.", "referencia_importada": "instagram/posts/2026-10-29_DfFuqfLGpZR_video.mp4" }
+  ],
+  "cta": { "tipo": "whatsapp", "texto": "Escribinos", "url": "https://wa.me/59169535546" },
+  "campania": null,
+  "estado": "programado",
+  "responsable": "",
+  "notas": "Ejemplo formato. Material real del archivo; recorte t>4s frontal."
+}

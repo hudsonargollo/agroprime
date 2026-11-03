@@ -1,0 +1,3 @@
+fecha,nombre,empresa,segmento,telefono,canal,guion_id,estado,fecha_contacto,resultado,notas
+2026-11-04,EJEMPLO Juan Perez,Ganaderia El Ceibo,A,59170000000,whatsapp,guion-2026-11-04-segmento-a,nuevo,,,"fila de ejemplo - borrar antes de usar"
+2026-11-04,EJEMPLO Maria Rojas,Inversionista independiente,B,59170000001,email,guion-email-2026-11-04-segmento-b,nuevo,,,"fila de ejemplo - borrar antes de usar"
