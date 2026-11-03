@@ -1,0 +1,16 @@
+[Unit]
+Description=AgroPrime Mkt Hub (Next.js, /mkt)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/ClubeMkt/agroprime/hub
+Environment=NODE_ENV=production
+Environment=PORT=4074
+Environment=HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/node .next/standalone/server.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
