@@ -1858,6 +1858,15 @@ body.menu-open .menu-toggle { border-color: rgba(245, 239, 224, 0.3); }
   color: rgba(245, 239, 224, 0.52);
 }
 .footer__disclaimer { max-width: 390px; }
+.footer__credits {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 239, 224, 0.42);
+  text-align: center;
+  margin-top: 14px;
+}
 .footer__top-link {
   display: inline-flex;
   align-items: center;
