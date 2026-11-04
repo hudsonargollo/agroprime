@@ -8,7 +8,8 @@ WorkingDirectory=/root/ClubeMkt/agroprime/hub
 Environment=NODE_ENV=production
 Environment=PORT=4074
 Environment=HOSTNAME=127.0.0.1
-ExecStart=/usr/bin/node .next/standalone/server.js
+Environment=HUB_DB_PATH=/root/ClubeMkt/agroprime/hub/data/users.db
+ExecStart=/usr/local/bin/node .next/standalone/server.js
 Restart=on-failure
 RestartSec=5
 

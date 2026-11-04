@@ -11,7 +11,7 @@ cd "$HUB"
 npm run build
 
 echo "== 2. Usuario admin semilla (si no existe DB de usuarios) =="
-if [ ! -f "$HUB/data/users.db" ] && [ -f "$HUB/scripts/seed.mjs" ]; then
+if [ ! -f "$HUB/data/users.db" ] && [ -f "$HUB/scripts/seed.ts" ]; then
   if [ -z "${1:-}" ]; then
     echo "Uso: deploy.sh <email> <password>"
     exit 0
