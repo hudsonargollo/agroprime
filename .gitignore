@@ -1,2 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# Cloudflare / deploy credentials (never commit)
+.deploy-credentials
+deploy/.adminpass
+deploy/admin-credentials.local
+hub/.env
