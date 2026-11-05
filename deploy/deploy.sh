@@ -16,7 +16,7 @@ if [ ! -f "$HUB/data/users.db" ] && [ -f "$HUB/scripts/seed.ts" ]; then
     echo "Uso: deploy.sh <email> <password>"
     exit 0
   fi
-  node "$HUB/scripts/seed.mjs" "$1" "$2"
+  node "$HUB/scripts/seed.ts" "$1" "$2"
 fi
 
 echo "== 3. Servicio systemd =="

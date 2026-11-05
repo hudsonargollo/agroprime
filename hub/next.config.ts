@@ -4,6 +4,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/mkt"
 
 const nextConfig: NextConfig = {
   basePath,
+  assetPrefix: basePath,
   env: { NEXT_PUBLIC_BASE_PATH: basePath },
   output: "standalone",
   serverExternalPackages: ["better-sqlite3"],
