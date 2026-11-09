@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useMemo, useState } from "react"
 import { AssetListItem } from "@/lib/types"
-import { BP } from "@/lib/base"
 
 const DOW = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
 const MES = [
@@ -99,7 +98,7 @@ export default function CalendarBoard({ assets }: { assets: AssetListItem[] }) {
                   key={a.id}
                   className={"cal-item canal-" + a.canal}
                   title={`${a.titulo} (${a.canal}, ${a.responsable || "sin asignar"})`}
-                  href={BP + "/asset/" + a.id}
+                  href={"/asset/" + a.id}
                 >
                   {a.fecha.slice(11, 16) || "    "} {a.canal.charAt(0).toUpperCase()} · {a.titulo}
                 </Link>

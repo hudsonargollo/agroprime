@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useState } from "react"
 import { AssetListItem, CANALES, DIRS, NOMBRE_DIRS } from "@/lib/types"
-import { BP } from "@/lib/base"
 
 const BADGE_ESTADO: Record<string, string> = {
   idea: "idea",
@@ -52,7 +51,7 @@ export default function ArchivoView({ assets }: { assets: AssetListItem[] }) {
                   {files.map((a) => (
                     <tr key={a.id}>
                       <td>
-                        <Link href={BP + "/asset/" + a.id}>
+                        <Link href={"/asset/" + a.id}>
                           {a.titulo || a.ruta.split("/").pop()}
                         </Link>
                       </td>

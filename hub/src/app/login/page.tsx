@@ -27,7 +27,7 @@ export default function LoginPage() {
         setBusy(false)
         return
       }
-      router.replace(BP + "/")
+      router.replace("/")
       router.refresh()
     } catch {
       setError("No se pudo conectar con el servidor")

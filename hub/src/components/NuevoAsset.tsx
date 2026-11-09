@@ -44,7 +44,7 @@ export default function NuevoAsset({
         setBusy(false)
         return
       }
-      router.push(BP + "/asset/" + j.id)
+      router.push("/asset/" + j.id)
       router.refresh()
     } catch {
       setError("Error de red")

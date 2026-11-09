@@ -161,7 +161,7 @@ export default function Kanban({
               .map((a) => (
                 <Link
                   key={a.id}
-                  href={BP + "/asset/" + a.id}
+                  href={"/asset/" + a.id}
                   className="kcard"
                   draggable={puedeMover}
                   onDragStart={() => setDragId(a.id)}

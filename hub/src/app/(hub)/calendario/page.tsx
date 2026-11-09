@@ -1,4 +1,5 @@
 import { listAssets } from "@/lib/content"
+import { BP } from "@/lib/base"
 import CalendarBoard from "@/components/CalendarBoard"
 
 export const dynamic = "force-dynamic"
@@ -9,7 +10,7 @@ export default async function CalendarioPage() {
     <div>
       <div className="toolbar">
         <h1 style={{ margin: 0, flex: 1 }}>Calendario de publicaciones</h1>
-        <a className="btn-ghost" href="/api/export.ics" download="mkt-hub.ics">
+        <a className="btn-ghost" href={BP + "/api/export.ics"} download="mkt-hub.ics">
           Exportar ICS (±2 meses)
         </a>
       </div>

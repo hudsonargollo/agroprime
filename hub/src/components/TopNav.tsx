@@ -19,7 +19,7 @@ export default function TopNav({ email, role }: { email: string; role: string })
   async function logout() {
     setBusy(true)
     await fetch(BP + "/api/auth/logout", { method: "POST" })
-    router.replace(BP + "/login")
+    router.replace("/login")
     router.refresh()
   }
 
@@ -28,17 +28,17 @@ export default function TopNav({ email, role }: { email: string; role: string })
 
   return (
     <nav className="topnav">
-      <Link href={BP + "/"} className="brand">
+      <Link href="/" className="brand">
         MKT HUB
         <small>Agro-Prime · pipeline de contenido</small>
       </Link>
       {LINKS.map((l) => (
-        <Link key={l.href} href={BP + l.href} className={linkCls(l.href)}>
+        <Link key={l.href} href={l.href} className={linkCls(l.href)}>
           {l.label}
         </Link>
       ))}
       {role === "admin" && (
-        <Link href={BP + "/usuarios"} className={linkCls("/usuarios")}>
+        <Link href="/usuarios" className={linkCls("/usuarios")}>
           Usuarios
         </Link>
       )}

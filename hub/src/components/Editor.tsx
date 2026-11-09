@@ -144,7 +144,7 @@ export default function Editor({
     if (readonly) return
     if (!confirm("¿Eliminar este archivo del pipeline? (queda en el historial git)")) return
     const res = await fetch(BP + `/api/asset/${id}`, { method: "DELETE" })
-    if (res.ok) router.push(BP + "/archivo")
+    if (res.ok) router.push("/archivo")
     else flash("No se pudo eliminar")
   }
 
@@ -162,7 +162,7 @@ export default function Editor({
   return (
     <div>
       <div className="toolbar">
-        <Link href={BP + "/archivo"} className="btn-ghost">
+        <Link href="/archivo" className="btn-ghost">
           ← Archivo
         </Link>
         <h1 style={{ margin: 0, flex: 1 }}>
