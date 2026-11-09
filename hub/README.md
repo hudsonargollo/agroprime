@@ -129,6 +129,12 @@ En el servidor hay dos bloques (`deploy/`): `nginx-agroprime-hub.conf` para
 301 a `mkt`. Los nombres exactos ganan sobre el wildcard `*.clubemkt.digital`, que si no cae en
 Krikkit y devuelve 404.
 
+`agroprime.clubemkt.digital` es un custom domain de Cloudflare Pages (`agroprime.pages.dev`), así
+que nginx nunca ve ese host. El path `/mkt` entra por un Worker (`deploy/cloudflare/`): las rutas
+`agroprime.clubemkt.digital/mkt` y `/mkt/*` proxyean a `mkt.clubemkt.digital` y reescriben el
+`Location` para que el usuario no salga del dominio. Se publica con
+`CF_API_TOKEN=… CF_ACCOUNT_ID=… CF_ZONE_ID=… deploy/cloudflare/deploy-worker.sh`.
+
 ## systemd
 
 ```ini
