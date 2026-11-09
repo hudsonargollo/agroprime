@@ -30,6 +30,8 @@ systemctl --no-pager -l status agroprime-hub | head -5
 echo "== 4. Nginx: bloque exacto agroprime.clubemkt.digital con /mkt =="
 cp "$REPO/deploy/nginx-agroprime-hub.conf" /etc/nginx/sites-available/agroprime-hub
 ln -sf /etc/nginx/sites-available/agroprime-hub /etc/nginx/sites-enabled/agroprime-hub
+cp "$REPO/deploy/nginx-agroprime-hub-subdomains.conf" /etc/nginx/sites-available/agroprime-hub-subdomains
+ln -sf /etc/nginx/sites-available/agroprime-hub-subdomains /etc/nginx/sites-enabled/agroprime-hub-subdomains
 nginx -t
 systemctl reload nginx
 
@@ -38,4 +40,6 @@ sleep 2
 echo -n "Hub local: "; curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:4074/mkt/login
 echo -n "Vía nginx: "; curl -s -o /dev/null -w '%{http_code}\n' -H 'Host: agroprime.clubemkt.digital' http://127.0.0.1/mkt/login
 echo -n "Sitio raíz intacto: "; curl -s -o /dev/null -w '%{http_code}\n' -H 'Host: agroprime.clubemkt.digital' http://127.0.0.1/
-echo "Hu está en: https://agroprime.clubemkt.digital/mkt"
+echo -n "Subdominio mkt: "; curl -s -o /dev/null -w '%{http_code}\n' -H 'Host: mkt.clubemkt.digital' http://127.0.0.1/mkt/login
+echo -n "Subdominio hub (301): "; curl -s -o /dev/null -w '%{http_code}\n' -H 'Host: hub.clubemkt.digital' http://127.0.0.1/
+echo "Hub en: https://agroprime.clubemkt.digital/mkt y https://mkt.clubemkt.digital/mkt"

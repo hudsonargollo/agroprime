@@ -18,6 +18,13 @@ export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone()
   url.pathname = "/login"
   url.search = ""
+  // Tras nginx el origen interno es 127.0.0.1:4074; el redirect tiene que salir
+  // con el host y protocolo públicos (ver deploy/*.conf: X-Forwarded-*).
+  const host = req.headers.get("x-forwarded-host") ?? req.headers.get("host")
+  if (host) {
+    const proto = req.headers.get("x-forwarded-proto") ?? req.nextUrl.protocol.replace(":", "")
+    return NextResponse.redirect(new URL(`${proto}://${host}${req.nextUrl.basePath}/login`))
+  }
   return NextResponse.redirect(url)
 }
 

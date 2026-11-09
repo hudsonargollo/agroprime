@@ -123,6 +123,12 @@ location /mkt/ {
 > Nota: el `basePath` de `next.config.ts` (default `/mkt`) debe coincidir con el prefijo del
 > `location` de nginx. Si cambiás uno, cambiá ambos (`NEXT_PUBLIC_BASE_PATH`).
 
+En el servidor hay dos bloques (`deploy/`): `nginx-agroprime-hub.conf` para
+`agroprime.clubemkt.digital/mkt` y `nginx-agroprime-hub-subdomains.conf`, que expone el Hub en
+**https://mkt.clubemkt.digital/mkt** (la raíz redirige ahí) y manda `hub.clubemkt.digital` con un
+301 a `mkt`. Los nombres exactos ganan sobre el wildcard `*.clubemkt.digital`, que si no cae en
+Krikkit y devuelve 404.
+
 ## systemd
 
 ```ini
